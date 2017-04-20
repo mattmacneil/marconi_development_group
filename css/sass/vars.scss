@@ -1,0 +1,27 @@
+
+$purewhite: #fff;
+$white: #f2f2f2;
+
+$black: #0d1e41;
+$grey: #3b3b3b;
+$lightgrey: lighten($grey, 40%);
+$lightergrey: lighten($grey, 70%);
+
+$blue: #1c418e;
+$darkblue: darken($blue, 10%);
+$green: #159a92;
+$yellow: #F5A503;
+
+///
+
+$body_background_color: $white;
+$body_background_image: none;
+
+$nav-height: 100px;
+
+$headline-font: 'Comme', 'Arial Black', Gadget, sans-serif;
+$headline-weight: 700;
+
+$body-font: 'Comme', Arial, Helvetica, sans-serif;
+$body-weight: 300;
+$body-text-color: $grey;

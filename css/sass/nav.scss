@@ -1,0 +1,155 @@
+@import "vars";
+@import "mixins";
+
+nav{
+	padding: 0 10%;
+}
+
+	#nav-inner{
+		width: 100%;
+		height: $nav-height;
+	}
+
+	#nav-left{
+		display: inline-block;
+		width: auto;
+		height: $nav-height;
+	}
+
+		#nav-logo{
+			height: $nav-height;
+			float: left;
+			margin-right: 25px;
+
+			img{
+				height: 60px;
+			}
+		}
+
+		#nav-title{
+			height: $nav-height;
+			float: left;
+
+			a{
+				padding: 10px 0;
+				font-weight: bolder;
+				text-decoration: none;
+
+				br{
+					display: none;
+				}
+			}
+
+		}
+
+	#nav-links{
+		height: $nav-height;
+		float: right;
+
+		a{
+			padding: 25px 0;
+			margin-right: 50px;
+			text-decoration: none;
+
+			&:hover{
+				color: $blue;
+				padding-bottom: 15px;
+				border-bottom: 1px solid $blue;
+				@include fader;
+			}
+		}
+		
+		a:last-of-type{
+			margin-right: 0;
+		}
+	}
+
+	#nav-logo,
+	#nav-title,
+	#nav-links{
+		display: table;
+		text-transform: lowercase;
+		font-variant: small-caps;
+	}
+
+		.nav-align{
+			width: 100%;
+			height: 100%;
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+@media screen and (max-width: 1075px){
+
+	#nav-links{
+		a{
+			margin-right: 25px;
+		}
+
+		a:last-of-type{
+			margin-right: 0;
+		}
+	}
+
+}
+
+@media screen and (max-width: 875px){
+	#nav-title{
+		a{
+			br{
+				display: inline-block;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 650px){
+
+	nav{
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-top: 12.5px;
+	}
+
+	#nav-inner{
+		height: auto;
+	}
+
+		#nav-left{
+			width: 100%;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+		}
+
+			#nav-logo{
+				img{
+					height: 75px;
+				}
+			}
+
+		#nav-links{
+			width: 100%;
+			height: auto;
+			padding-top: 12.5px;
+			padding-bottom: 25px;
+			text-align: center;
+
+			a{
+				margin-right: 0;
+
+				span{
+					display: none;
+				}
+			}
+
+			a:nth-child(2){
+				margin: 0 25px;
+			}
+		}
+}

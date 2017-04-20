@@ -1,0 +1,163 @@
+@import "vars";
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden !important;
+  overflow-y: scroll;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  max-width: 3000px;
+  min-height: 100%;
+  background-color: $body_background_color;
+  font-family: $body-font;
+  font-weight: $body-weight;
+  color: $body-text-color;
+  font: 16px/1 sans-serif;
+  font-size: 1.3em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: $body_background_image;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+nav,
+footer{
+  font-family: $body-font;
+}
+
+div,
+section,
+input,
+textarea{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: $body-font;
+}
+
+p{
+  font-variant-numeric: oldstyle-nums;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration{
+  -webkit-appearance: none;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+a{
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  visibility: visible;
+  text-decoration: underline;
+  z-index: 9999;
+
+  &:active{
+    text-decoration: none;
+  }
+
+  &:hover{
+    text-decoration: none;
+  }
+  
+  &:visited{
+    text-decoration: none;
+  }
+}
+
+hr{
+  display: block;
+  height: 1px; 
+  border:0; 
+  border-top: 1px solid $black;
+  margin: 0;
+  padding:0;
+}
+
+input, select{
+  vertical-align: middle;
+}
+
+::-moz-selection {
+  background: $yellow;
+}
+
+::selection {
+  background: $yellow;
+}
+
+::-moz-selection {
+  background: $yellow;
+}
+
+.margins-90{
+  width: 90%;
+}
+
+.margins-80{
+  width: 80%;
+}
+    
+.margins-70{
+  width: 70%;
+}
+
+.margins-90,
+.margins-80,
+.margins-70{
+  margin: 0px auto;
+  z-index: 5;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.tb{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.noline{
+  text-decoration: none;
+}
